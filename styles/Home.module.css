@@ -1,9 +1,13 @@
 .container {
   padding: 0 2rem;
+  background-color: #A0A0A0 ;
+  /* height: 100vh; */
+
 }
 
 .main {
   min-height: 100vh;
+  background-color: black;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -29,7 +33,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #fafafa;
   text-decoration: none;
 }
 
