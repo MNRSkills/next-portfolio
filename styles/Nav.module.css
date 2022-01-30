@@ -1,0 +1,22 @@
+.container {
+  padding: 0 1.5rem;
+  /* background-color: #a0a0a0; */
+  border-bottom: 4px solid gray;
+  display: grid;
+  grid-template-rows: 90px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.unorderList {
+  list-style-type: none;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.unorderList li {
+    margin: 20px;
+    color: white;
+}

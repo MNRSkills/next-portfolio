@@ -1,0 +1,9 @@
+
+
+.postContainer {
+    color: white;
+}
+
+.postContainer a:hover {
+    color: red;
+}

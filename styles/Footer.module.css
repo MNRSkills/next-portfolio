@@ -1,0 +1,24 @@
+
+.container {
+    background: transparent;
+    padding: 2rem 4rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: white;
+}
+
+
+.iconList {
+    padding:20px;
+    width: 50%;
+}
+
+.iconList li {
+    display: inline;
+    padding: 2em;
+}
