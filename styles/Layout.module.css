@@ -1,6 +1,6 @@
 .container {
     padding: 0 2rem;
-    background-color: black ;
+    background-color: black;
     font-family:Ubuntu, sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
   }

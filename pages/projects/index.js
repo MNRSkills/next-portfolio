@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Prototype47",
       link: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg",
       published: true,
-      skill: "medium",
+      description: "Javier Quezada Portfolio website. Fullstack with mongodb, rest api, and crud functionality.",
       catagory: "ReactJS",
       imgURL: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg"
     },
@@ -17,7 +17,7 @@ const Projects = () => {
       title: "Ramirez Trucking",
       link: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg",
       published: true,
-      skill: "medium",
+      description: "Local trucking business landing page with contact form email funcionality.",
       catagory: "ReactJS",
       imgURL: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg"
     },
@@ -26,14 +26,14 @@ const Projects = () => {
       title: "Bottega Capstone",
       link: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg",
       published: true,
-      skill: "medium",
+      description: "Bootcamp capstone with react, calling backend api. Dynamically populating items.",
       catagory: "ReactJS",
       imgURL: "https://res.cloudinary.com/mackr/image/upload/v1641530681/IT-Blog/r1lmkwk9qz4ou185uaav.jpg"
     },
   ];
 
   return (
-    <motion.div>
+    <motion.div className="project-index">
       <ProjectsCO data={data} />
     </motion.div>
   );

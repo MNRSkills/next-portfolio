@@ -1,0 +1,36 @@
+.projectMain {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 20px;
+}
+
+
+.card{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    border:4px solid #E2BB5B ;
+    border-radius: 10px 10px;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    background-color: white;
+    color: #353535;
+    text-align: center;
+}
+
+.cardImage img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px;
+    box-shadow: -1px 20px 20px .02em;
+}
+
+.cardBttm {
+    margin-top: 10px;
+}

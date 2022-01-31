@@ -1,4 +1,5 @@
 import ProjectDetail from "./projectDetail";
+import projectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectsCO = (props) => {
 
@@ -8,7 +9,7 @@ const ProjectsCO = (props) => {
     console.log("THIS HANDLER IS CLICKED");
   };
   return (
-    <div>
+    <div className={projectStyles.projectMain}>
       {props.data.map((project, index) => {
         return (
           <ProjectDetail
