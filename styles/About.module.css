@@ -1,11 +1,36 @@
+.aboutMePage {
+  /* padding: 20px; */
+  display: grid;
+  grid-template-columns: [start-right] 5% [right-middle] 30% [middle-m] auto [left-middle] 30% [left-start] 5% [left-end];
+  grid-template-rows: [header-start] 20% [header-end bio-start] 1fr [bio-end footer-start] 20% [footer-end];
+  grid-gap: 20px;
+}
+.container {
+  grid-column-start: right-middle;
+  grid-column-end: left-start;
+  grid-row-start: header-start;
+  grid-row-end: footer-end;
+}
 
+.aboutPicFrame {
+  width: 500px;
+  grid-row: bio-start/bio-end;
+  grid-column: right-middle/middle-m;
+}
 
-.container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem, 0;
-    background-color: black;
-    color: white;
-    height: 100vh;
+.aboutPicFrame img {
+  width: 100%;
+}
+
+.aboutMe {
+  grid-column: left-middle/left-start;
+  grid-row: bio-start/bio-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.aboutMe h2 {
+  font-weight: 300;
 }
