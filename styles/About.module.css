@@ -1,15 +1,18 @@
 .aboutMePage {
+    height: 75vh;
   /* padding: 20px; */
+  display: grid;
+  grid-template-columns: 10%[col-right] 1fr [col-left] 10%;
+  grid-template-rows: [header-start] 20% [header-end bio-start] 1fr [bio-end footer-start] 20% [footer-end];
+}
+.container {
+  grid-column-start: col-right;
+  grid-column-end: col-left;
+  grid-row-start: header-start;
+  grid-row-end: footer-end;
   display: grid;
   grid-template-columns: [start-right] 5% [right-middle] 30% [middle-m] auto [left-middle] 30% [left-start] 5% [left-end];
   grid-template-rows: [header-start] 20% [header-end bio-start] 1fr [bio-end footer-start] 20% [footer-end];
-  grid-gap: 20px;
-}
-.container {
-  grid-column-start: right-middle;
-  grid-column-end: left-start;
-  grid-row-start: header-start;
-  grid-row-end: footer-end;
 }
 
 .aboutPicFrame {
@@ -20,6 +23,8 @@
 
 .aboutPicFrame img {
   width: 100%;
+  border-radius: 10px;
+  opacity: 0.4;
 }
 
 .aboutMe {
@@ -28,7 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 
 .aboutMe h2 {

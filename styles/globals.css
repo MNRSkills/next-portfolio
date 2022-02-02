@@ -1,17 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Source+Code+Pro:wght@300;400;600;900&display=swap");
+
 html,
 body {
   color: white;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
 }
