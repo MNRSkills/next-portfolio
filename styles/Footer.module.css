@@ -2,6 +2,8 @@
 .container {
     background: transparent;
     padding: 2rem 4rem;
+    background: #202124;
+    width: 100%;
 }
 
 .wrapper {

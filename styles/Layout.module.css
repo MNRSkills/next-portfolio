@@ -1,6 +1,13 @@
 .container {
-    padding: 0 2rem;
-    background-color: black;
-    font-family:Ubuntu, sans-serif;
-    /* height: 100vh; */
-  }
+  background: radial-gradient(
+    circle,
+    rgba(18, 18, 20, 1) 0%,
+    rgba(42, 42, 42, 1) 72%,
+    rgba(42, 38, 38, 1) 100%
+  );
+  font-family: Ubuntu, sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: [nav-start] 6rem [nav-end content-start] 1fr [content-end footer-start] 200px [footer-end];
+
+}

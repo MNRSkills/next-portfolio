@@ -1,15 +1,16 @@
 .container {
-  padding: 0 1.5rem;
-  /* background-color: #a0a0a0; */
+
+  background-color: #202124;
   border-bottom: 4px solid gray;
   display: grid;
   grid-template-rows: 90px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 80% 15%;
 }
 
 .unorderList {
   list-style-type: none;
-  padding: 20px;
+  padding: 0 30px;
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -19,4 +20,9 @@
 .unorderList li {
     margin: 20px;
     color: white;
+}
+
+.unorderList a {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
 }
