@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import PostStyles from "../../styles/BlogPost.module.css";
 
-const DUMMMY_DATA = [
+import Blogs from "../../components/Blogs/blogs";
+
+const DUMMY_DATA = [
   {
     _id: "61d7c539bc934deca56be1fc",
     slug: "something",
@@ -37,28 +39,29 @@ const DUMMMY_DATA = [
 ];
 
 const PostDetail = (props) => {
-  console.log("THIS IS STill DUMMY DATA", props);
+  console.log("THIS IS STill DUMMY DATA", props.blogsData);
 
   return (
     <motion.div className={PostStyles.postContainer}>
       <h1>This is the PoSt Page in Dynamic form</h1>
       <Link href='/'>Home</Link>
+      <Blogs blogData={props.blogsData}/>
     </motion.div>
   );
 };
 
 
-const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   //get the data from the backend
   // const res = fetch("http://localhost:8080/blogs");
   
 
   return {
     props: {
-      blogsData: `${DUMMMY_DATA}`,
+      blogsData:DUMMY_DATA,
     },
   };
 };
 
-getStaticProps();
+getServerSideProps(DUMMY_DATA);
 export default PostDetail;
