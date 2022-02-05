@@ -36,6 +36,15 @@
   width: 100%;
 }
 
-.aboutMe h2 {
+.aboutMe h1 {
+  margin:0;
+  font-size: 4em;
   font-weight: 300;
+
+}
+
+.aboutMe p {
+  font-weight: 300;
+  font-size: 1.7em;
+  margin: 0;
 }

@@ -3,7 +3,7 @@ import styles from "../../styles/Nav.module.css";
 
 const NavBar = () => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <ul className={styles.unorderList}>
         <li>
           <Link href='/about'>About</Link>
@@ -12,7 +12,7 @@ const NavBar = () => {
           <Link href='/projects'>Projects</Link>
         </li>
         <li>
-          <Link href='/blog/posts'>Blog</Link>
+          <Link href='/blog'>Blog</Link>
         </li>
       </ul>
       <ul className={styles.unorderList}>
@@ -26,7 +26,7 @@ const NavBar = () => {
               <Link href="/github">GitHub</Link>
           </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
