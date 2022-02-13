@@ -3,12 +3,13 @@ import Link from "next/link";
 import projectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectDetail = (props) => {
-  console.log("LOOKING FOR PROPS", props.project);
+  // console.log("LOOKING FOR PROPS", props.project);
 
   const { id, title, description, category, link, imgURL } = props.project;
 
   const selectID = (id) => {
-    props.itemHandler();
+    console.log("WHAT IS HEADING BACK", id)
+    props.itemHandler(id);
   };
   return (
     <div className={projectStyles.card}>

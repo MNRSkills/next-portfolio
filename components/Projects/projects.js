@@ -5,8 +5,8 @@ const ProjectsCO = (props) => {
 
 
   //THE CLICKHANDLER FOR INDIVIDUAL ITEM GOES HERE
-  const itemHandler = () => {
-    console.log("THIS HANDLER IS CLICKED");
+  const itemHandler = (id) => {
+    console.log("THIS HANDLER IS CLICKED", id);
   };
   return (
     <div className={projectStyles.projectMain}>

@@ -1,7 +1,6 @@
 import blogStyles from "../../styles/BlogPost.module.css";
 
 const BlogItem = (props) => {
-  console.log(props.blog);
   const { title, id, category, slug, thumbnail_image } = props.blog;
   return (
     <div className={blogStyles.card}>
