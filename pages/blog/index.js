@@ -39,26 +39,23 @@ const DUMMY_DATA = [
 ];
 
 const PostDetail = (props) => {
-  console.log("THIS IS STill DUMMY DATA", props.blogsData);
+  // console.log("THIS IS STill DUMMY DATA", props.blogsData);
 
   return (
     <motion.div className={PostStyles.postContainer}>
-      <h1>This is the PoSt Page in Dynamic form</h1>
       <Link href='/'>Home</Link>
-      <Blogs blogData={props.blogsData}/>
+      <Blogs blogData={props.blogsData} />
     </motion.div>
   );
 };
 
-
 export const getServerSideProps = async () => {
   //get the data from the backend
   // const res = fetch("http://localhost:8080/blogs");
-  
 
   return {
     props: {
-      blogsData:DUMMY_DATA,
+      blogsData: DUMMY_DATA,
     },
   };
 };

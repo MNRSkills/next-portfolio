@@ -1,14 +1,14 @@
-import blogStyles from "../../styles/Blog.module.css";
+import blogStyles from "../../styles/BlogPost.module.css";
 
 const BlogItem = (props) => {
   console.log(props.blog);
   const { title, id, category, slug, thumbnail_image } = props.blog;
   return (
-    <div>
+    <div className={blogStyles.card}>
       <div>{title}</div>
-      <div className={blogStyles.container}>
+      <div className="className">
         <img
-          className={blogStyles.imgWrapper}
+          className={blogStyles.cardIMG}
           src={thumbnail_image}
           alt='this is a picture'
         />

@@ -2,8 +2,28 @@
 
 .postContainer {
     color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 10% [padding-right] 1fr [padding-left] 10%;
 }
 
 .postContainer a:hover {
     color: red;
+}
+
+
+.container {
+    grid-column: padding-right/padding-left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% [top-padding] 1fr [bottom-padding] 10%;
+}
+
+.card {
+    grid-row: top-padding/bottom-padding;
+}
+
+.cardIMG {
+    width: 400px;
+    border-radius: 10px;
 }

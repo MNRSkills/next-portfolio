@@ -1,16 +1,15 @@
 import { motion } from "framer-motion";
 import BlogItem from "./blogItem";
+import BlogStyles from "../../styles/BlogPost.module.css";
 
 const Blogs = (props) => {
   console.log(props.blogData);
 
   return (
-    <div>
-      <div>
+    <div className={BlogStyles.container}>
         {props.blogData.map((blog, index) => {
           return <BlogItem blog={blog} key={index} />;
         })}
-      </div>
     </div>
   );
 };
