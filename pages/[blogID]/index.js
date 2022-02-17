@@ -5,9 +5,9 @@ const BlogID = (props) => {
   return <div> BlogID</div>;
 };
 
-const getStaticProps = async (context) => {
-    console.log("looking for context", context.params.blogID)
-    const blogID = context.params.blogID;
+const getStaticProps = async () => {
+    // console.log("looking for context", context.params.blogID)
+    // const blogID = context.params.blogID;
   return {
     props: {
       singleBlog: {
@@ -23,6 +23,6 @@ const getStaticProps = async (context) => {
   };
 };
 
-getStaticProps();
+// getStaticProps();
 
 export default BlogID;

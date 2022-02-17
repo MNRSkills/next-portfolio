@@ -44,23 +44,20 @@ const PostDetail = (props) => {
   return (
     <motion.div className={PostStyles.postContainer}>
       <Link href='/'>Home</Link>
-      {/* <Blogs blogData={props.blogsData} /> */}
+      <Blogs blogData={props.blogsData} />
     </motion.div>
   );
 };
 
 export const getServerSideProps = async () => {
   //get the data from the backend
-  const res = await fetch("http://localhost:8080/blogs");
-  const blogSelected = JSON.parse(JSON.stringify(res.data))
-  // console.log("DATA FETCHING", blogSelected);
 
   return {
     props: {
-      blogsData: blogSelected,
+      blogsData: DUMMY_DATA,
     },
   };
 };
 
-getServerSideProps();
+getServerSideProps(DUMMY_DATA);
 export default PostDetail;

@@ -4,8 +4,8 @@ const BlogItem = (props) => {
   const { title, id, category, slug, thumbnail_image } = props.blog;
   return (
     <div className={blogStyles.card}>
-      <div>{title}</div>
-      <div className="className">
+      <div className={blogStyles.cardIMGBOX}>
+        <div className={blogStyles.cardText}>{title}</div>
         <img
           className={blogStyles.cardIMG}
           src={thumbnail_image}

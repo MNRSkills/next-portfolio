@@ -3,6 +3,7 @@ import BlogItem from "./blogItem";
 import BlogStyles from "../../styles/BlogPost.module.css";
 
 const Blogs = (props) => {
+  console.log("BLOG", props);
 
   return (
     <div className={BlogStyles.container}>
