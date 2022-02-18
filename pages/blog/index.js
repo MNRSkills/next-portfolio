@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import PostStyles from "../../styles/BlogPost.module.css";
+import blogStyles from "../../styles/BlogPost.module.css";
 
 import Blogs from "../../components/Blogs/blogs";
 
@@ -23,7 +23,7 @@ const DUMMY_DATA = [
     category: ["hardware"],
     tag: "here",
     thumbnail_image:
-      "https://res.cloudinary.com/mackr/image/upload/v1641882506/IT-Blog/srjrbowbovmtedo18zbn.jpg",
+      "https://res.cloudinary.com/mackr/image/upload/v1615472373/ioys6fphfkfef6rscwf3.jpg",
     __v: 0,
   },
   {
@@ -36,13 +36,33 @@ const DUMMY_DATA = [
       "https://res.cloudinary.com/mackr/image/upload/v1643684867/IT-Blog/uuea5uau2hgm7e2fb1ds.jpg",
     __v: 0,
   },
+  {
+    _id: "61f8a4041dce15579ab3381a",
+    slug: "This is just.for the profile pic ",
+    title: "There is something cool",
+    category: ["software"],
+    tag: "here",
+    thumbnail_image:
+      "https://res.cloudinary.com/mackr/image/upload/v1643684867/IT-Blog/uuea5uau2hgm7e2fb1ds.jpg",
+    __v: 0,
+  },
+  {
+    _id: "61f8a4041dce15579ab3381a",
+    slug: "This is just.for the profile pic ",
+    title: "There is something cool",
+    category: ["software"],
+    tag: "here",
+    thumbnail_image:
+      "https://res.cloudinary.com/mackr/image/upload/v1643684867/IT-Blog/uuea5uau2hgm7e2fb1ds.jpg",
+    __v: 0,
+  }
 ];
 
 const PostDetail = (props) => {
   // console.log("THIS IS STill DUMMY DATA", props.blogsData);
 
   return (
-    <motion.div className={PostStyles.postContainer}>
+    <motion.div className={blogStyles.postContainer}>
       <Link href='/'>Home</Link>
       <Blogs blogData={props.blogsData} />
     </motion.div>
