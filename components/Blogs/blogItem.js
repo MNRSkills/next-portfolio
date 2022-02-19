@@ -1,16 +1,21 @@
+import { filterProps } from "framer-motion";
 import blogStyles from "../../styles/BlogPost.module.css";
 
 const BlogItem = (props) => {
-  const { title, id, category, slug, thumbnail_image } = props.blog;
+  const { title, subTitle, id, category, slug, thumbnail_image } = props.blog;
+
+  const backgroundImage = {
+    backgroundImage: "url(" + thumbnail_image + ")",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    width: "100%",
+  };
   return (
-    <div className={blogStyles.card} styles={`background-image:url(${thumbnail_image}); width: 200px;`}>
+    <div className={blogStyles.card} style={backgroundImage}>
       <div className={blogStyles.cardDescription}>
-        <div className={blogStyles.cardText}>{title}</div>
-        {/* <img
-          className={blogStyles.cardIMG}
-          src={thumbnail_image}
-          alt='this is a picture'
-        /> */}
+       <h1>{title}</h1>
+       <h6>{subTitle}</h6>
       </div>
     </div>
   );

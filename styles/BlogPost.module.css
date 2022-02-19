@@ -5,41 +5,31 @@
   grid-template-columns: 10% [padding-right] 1fr [padding-left] 10%;
 }
 
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 40px;
   justify-content: center;
   align-items: center;
-
-  
+  margin-top: 6%;
 }
 
 .card {
-  /* padding: 10px;
-  display: flex;
-  flex-direction: column; */
+  opacity: .5;
+  min-width: 375px;
+  height: 260px;
+  border-radius: 3%;
+ 
 }
 
-.cardDescription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-
+.cardDescription { 
+  padding: 10%;
 }
 
-.cardDescription img{
-  width: 200px
-  
+.cardDescription h1 {
+  font-weight: 900;
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: capitalize;
 }
-
-.cardText {
-  /* position: absolute; */
-  /* left: 50%;
-  right: 50%;
-  bottom: 40%; */
-}
-

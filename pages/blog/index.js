@@ -10,6 +10,7 @@ const DUMMY_DATA = [
     _id: "61d7c539bc934deca56be1fc",
     slug: "something",
     title: "There is something cool",
+    subTitle: "Integer tempus feugiat mollis. Aliquam molestie, sem nec ullamcorper fermentum, enim lacus pulvinar est, eget sollicitudin tellus lectus et magna.",
     category: ["hardware"],
     tag: "here",
     thumbnail_image:
@@ -20,6 +21,7 @@ const DUMMY_DATA = [
     _id: "61dd238b2d45b69b35331761",
     slug: "somet",
     title: "this is the new tiitle",
+    subTitle: "Nunc dictum, enim ut euismod pharetra, felis purus ultrices sem, sit amet pharetra erat purus in nisi. Quisque porttitor lacinia odio, eget auctor justo. ",
     category: ["hardware"],
     tag: "here",
     thumbnail_image:
@@ -28,8 +30,9 @@ const DUMMY_DATA = [
   },
   {
     _id: "61f8a4041dce15579ab3381a",
-    slug: "This is just.for the profile pic ",
+    slug: "This is just.for the profile pic",
     title: "There is something cool",
+    subTitle: "Ut commodo leo et hendrerit tincidunt. Mauris a neque vel magna aliquet ullamcorper. Cras iaculis arcu ligula, ut cursus augue tincidunt vitae. Quisque laoreet eget erat eu efficitur.",
     category: ["software"],
     tag: "here",
     thumbnail_image:
@@ -40,6 +43,7 @@ const DUMMY_DATA = [
     _id: "61f8a4041dce15579ab3381a",
     slug: "This is just.for the profile pic ",
     title: "There is something cool",
+    subTitle: "Cras vitae consequat nibh. Phasellus dapibus porta ipsum at sollicitudin. Vivamus lacinia augue eget ante gravida feugiat. Aliquam velit nisl, venenatis ac massa sit amet, imperdiet tempor ante.",
     category: ["software"],
     tag: "here",
     thumbnail_image:
@@ -50,6 +54,7 @@ const DUMMY_DATA = [
     _id: "61f8a4041dce15579ab3381a",
     slug: "This is just.for the profile pic ",
     title: "There is something cool",
+    subTitle: "Praesent ac tellus molestie, ullamcorper magna ac, pretium nibh. Aliquam eleifend, lacus id pulvinar pellentesque, neque dolor efficitur dolor, nec scelerisque turpis tellus ac urna. ",
     category: ["software"],
     tag: "here",
     thumbnail_image:
