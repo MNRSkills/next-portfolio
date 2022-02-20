@@ -1,0 +1,18 @@
+.formContainer {
+  height: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: 10% [padding-right] 1fr [padding-left] 10%;
+}
+
+
+.formBlock{
+    grid-column: padding-left/padding-right;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+
+.label {
+    background-color: red;
+}
