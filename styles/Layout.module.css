@@ -6,7 +6,7 @@
     rgba(42, 38, 38, 1) 100%
   );
   font-family: Ubuntu, sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-rows: [nav-start] 6rem [nav-end content-start] 1fr [content-end footer-start] 200px [footer-end];
 

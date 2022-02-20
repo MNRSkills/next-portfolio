@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectsCO from "../../components/Projects/projects";
+import ProjectStyles from "../../styles/ProjectCard.module.css";
 
 const data = [
   {
@@ -40,7 +41,7 @@ const data = [
 const Projects = (props) => {
   console.log("THISIS FROM PAGE PROJECT", props.ProjectData)
   return (
-    <motion.div className='project-index'>
+    <motion.div className={ProjectStyles.postContainer}>
       <ProjectsCO data={props.ProjectData} />
     </motion.div>
   );

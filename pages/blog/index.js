@@ -68,7 +68,6 @@ const PostDetail = (props) => {
 
   return (
     <motion.div className={blogStyles.postContainer}>
-      <Link href='/'>Home</Link>
       <Blogs blogData={props.blogsData} />
     </motion.div>
   );

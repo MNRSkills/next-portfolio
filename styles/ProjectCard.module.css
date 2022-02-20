@@ -1,9 +1,20 @@
-.projectMain {
+.postContainer {
+    height: 100%;
+    color: white;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    padding: 20px;
+    grid-template-columns: 10% [padding-right] 1fr [padding-left] 10%;
+  }
+
+.projectContainer {
+    grid-column: padding-right/padding-left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 

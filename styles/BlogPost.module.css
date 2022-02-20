@@ -6,13 +6,15 @@
 }
 
 .container {
+  grid-column: padding-left/padding-right;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-gap: 40px;
   justify-content: center;
   align-items: center;
   margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .card {
