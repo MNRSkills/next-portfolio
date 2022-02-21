@@ -1,15 +1,17 @@
-import React from 'react'
-import NewBlogPost from '../../components/Blogs/newBlogForm';
+import React from "react";
+import NewBlogPost from "../../components/Blogs/newBlogForm";
 import blogFormStyle from "../../styles/BlogForm.module.css";
 
 const NewBlogPage = () => {
-
-    const addBlogHandler = (enteredBlog) => {
-        console.log("THIS IS A NEW POST", enteredBlog)
-    }
+  const addPostHandler = () => {
+    console.log("this is the New post Index", )
+  }
+  
   return (
-    <div className={blogFormStyle.formContainer}><NewBlogPost addBlogPost={addBlogHandler}/></div>
-  )
-}
+    <div className={blogFormStyle.formContainer}>
+      <NewBlogPost onAddPost={addPostHandler}/>
+    </div>
+  );
+};
 
 export default NewBlogPage;
