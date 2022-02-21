@@ -3,8 +3,21 @@ import NewBlogPost from "../../components/Blogs/newBlogForm";
 import blogFormStyle from "../../styles/BlogForm.module.css";
 
 const NewBlogPage = () => {
-  const addPostHandler = () => {
-    console.log("this is the New post Index", )
+  const addPostHandler = async (e) => {
+    try {
+      const response = await fetch("/api/blogPost", {
+        method: "POST",
+        body: JSON.stringify(e),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+      console.log(data)
+    } catch (error) {
+      console.log("THERE WAS AN ERROR", error);
+    }
   }
   
   return (
