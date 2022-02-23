@@ -8,16 +8,45 @@
 
 .formBlock{
     grid-column: padding-left/padding-right;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    flex-direction: column;
+    padding: 20px;
+    
 }
 
 
-.label {
-    background-color: red;
+.formBlock label {
+  width: 100%;
     font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 1.5em;
     text-align: center;
     text-transform: capitalize;
+}
+
+.formBlock input {
+  padding: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+
+.button {
+  background-color: silver;
+  color: white;
+  /* box-shadow: ; */
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+.formBlock input:focus {
+  font-weight: 300;
+  outline:none;
+  
 }

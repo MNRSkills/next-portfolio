@@ -2,13 +2,12 @@
 import { MongoClient } from "mongodb";
 
 export default async function handler(req, res) {
-  console.log("did something happen here", process.env.MONGO_DB)
   if (req.method === "POST") {
     const data = req.body;
 
 
     const mngoDB = await MongoClient.connect(
-      ""
+      process.env.MONGO_DB
     );
     const db = mngoDB.db();
 

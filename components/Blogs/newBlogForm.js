@@ -30,29 +30,28 @@ const NewBlogPost = (props) => {
   return (
     <form className={blogFormStyles.formBlock} onSubmit={addBlogHandler}>
       <label className={blogFormStyles.label}>title</label>
-      <input type='text' placeholder='Title' name='title' ref={titleRef} />
+      <input type='text' className={blogFormStyles.input} name="title" ref={titleRef} />
       <label className={blogFormStyles.label}>Subtitle</label>
       <input
+      className={blogFormStyles.input}
         type='text'
-        placeholder='Subtitle'
-        name='subTitle'
+        name="subtitle"
         ref={subtitleRef}
       />
       <label className={blogFormStyles.label}>Thumbnail Image</label>
       <input
+      className={blogFormStyles.input}
         type='text'
-        placeholder='Thumbnail Image'
-        name='thumbnail_image'
+        name="thumbnail_image"
         ref={thumbnail_imageRef}
       />
       <label className={blogFormStyles.label}>Content</label>
       <input
+        className={blogFormStyles.input}
         type='textarea'
-        placeholder='What is on your mind'
-        name='content'
         ref={contentRef}
       />
-      <button type='submit'>Submit</button>
+      <button className={blogFormStyles.button} type='submit'>Submit</button>
     </form>
   );
 };

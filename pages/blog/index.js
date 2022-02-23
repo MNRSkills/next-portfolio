@@ -8,7 +8,6 @@ import Blogs from "../../components/Blogs/blogs";
 
 
 const PostDetail = (props) => {
-  console.log("THIS IS STill DUMMY DATA", props.blogsData);
 
   return (
     <motion.div className={blogStyles.postContainer}>
