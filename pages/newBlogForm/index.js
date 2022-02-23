@@ -14,7 +14,7 @@ const NewBlogPage = () => {
       });
 
       const data = await response.json();
-      console.log(data)
+      console.log("RESPONSE FROM THE SERVER", data)
     } catch (error) {
       console.log("THERE WAS AN ERROR", error);
     }

@@ -15,7 +15,7 @@ const NavBar = () => {
       <ul className={styles.unorderList}>
         <li>
           {/* make this an icon later in the nav */}
-          <Link href='/newBlogPage'>New Blog</Link>
+          <Link href='/newBlogForm'>New Blog</Link>
         </li>
         <li>
           <Link href='/about'>About</Link>
