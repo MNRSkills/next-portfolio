@@ -5,22 +5,20 @@ import blogStyles from "../../styles/BlogPost.module.css";
 
 import Blogs from "../../components/Blogs/blogs";
 
-
-
 const PostDetail = (props) => {
-
   return (
     <motion.div className={blogStyles.postContainer}>
       <Blogs blogData={props.blogsData} />
+      <span>
+        {/* make this an icon later in the nav */}
+        <Link href='/newBlogForm'>New Blog</Link>
+      </span>
     </motion.div>
   );
 };
 
 export async function getStaticProps() {
-  const clientDB = await MongoClient.connect(
-   process.env.MONGO_DB
-
-  );
+  const clientDB = await MongoClient.connect(process.env.MONGO_DB);
   const db = clientDB.db();
 
   const blogCollection = db.collection("blogItems");

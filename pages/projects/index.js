@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import ProjectsCO from "../../components/Projects/projects";
 import ProjectStyles from "../../styles/ProjectCard.module.css";
 
@@ -43,6 +44,7 @@ const Projects = (props) => {
   return (
     <motion.div className={ProjectStyles.postContainer}>
       <ProjectsCO data={props.ProjectData} />
+      <Link href="/projectFormPage">New Project Form</Link>
     </motion.div>
   );
 };
