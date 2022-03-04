@@ -39,6 +39,12 @@ const ProjectForm = (props) => {
         name='title'
         ref={titleRef}
       />
+      <label className={projectFormStyles.label}>Content</label>
+      <input
+        className={projectFormStyles.input}
+        type='textarea'
+        ref={descriptionRef}
+      />
       <label className={projectFormStyles.label}>Project URL</label>
       <input
         className={projectFormStyles.input}
@@ -46,25 +52,19 @@ const ProjectForm = (props) => {
         name='link'
         ref={linkRef}
       />
-      <label className={projectFormStyles.label}>Thumbnail Image</label>
-      <input
-        className={projectFormStyles.input}
-        type='file'
-        name='thumbnail_image'
-        ref={thumbnail_imageRef}
-      />
       <label className={projectFormStyles.label}>GitHub Link</label>
       <input
         className={projectFormStyles.input}
-        type='file'
+        type='text'
         name='repoRef'
         ref={repoRef}
       />
-      <label className={projectFormStyles.label}>Content</label>
+      <label className={projectFormStyles.label}>Thumbnail Image</label>
       <input
         className={projectFormStyles.input}
-        type='textarea'
-        ref={descriptionRef}
+        type='text'
+        name='thumbnail_image'
+        ref={thumbnail_imageRef}
       />
       <button className={projectFormStyles.button} type='submit'>
         Submit
