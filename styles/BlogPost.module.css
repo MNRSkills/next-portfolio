@@ -22,11 +22,12 @@
   min-width: 375px;
   height: 260px;
   border-radius: 3%;
- 
+  position: relative;
 }
 
-.cardDescription { 
-  padding: 10%;
+.cardDescription {
+  /* padding: 10%; */
+  color: white;
 }
 
 .cardDescription h1 {
@@ -36,6 +37,5 @@
   text-transform: capitalize;
 }
 
-.imageContainer{
-  
+.imageContainer {
 }
