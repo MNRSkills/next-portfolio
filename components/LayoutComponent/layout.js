@@ -8,6 +8,7 @@ const Layout = (props) => {
     <div className={LayoutStyles.container}>
       <NavBar />
       <motion.div
+        className={LayoutStyles.parentDiv}
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

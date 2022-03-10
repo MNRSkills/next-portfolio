@@ -1,24 +1,19 @@
 .postContainer {
   height: 100%;
   color: white;
-  display: grid;
-  grid-template-columns: 10% [padding-right] 1fr [padding-left] 10%;
+  grid-column: layout-right/layout-left;
 }
 
 .container {
-  grid-column: padding-left/padding-right;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr 1fr; */
-  grid-gap: 40px;
-  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
   align-items: center;
   margin-top: 6%;
   margin-bottom: 6%;
 }
 
 .card {
-  /* opacity: .5; */
   min-width: 375px;
   height: 260px;
   border-radius: 3%;
@@ -28,6 +23,7 @@
 .cardDescription {
   /* padding: 10%; */
   color: white;
+  position: absolute;
 }
 
 .cardDescription h1 {
