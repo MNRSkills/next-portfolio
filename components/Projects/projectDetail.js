@@ -4,28 +4,14 @@ import Image from "next/image";
 import projectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectDetail = (props) => {
-  console.log("LOOKING FOR PROPS", props);
+  console.log("LOOKING FOR PROPS", props.project.fields);
 
-  // const { id, title, description, category, link, bannerImage } = props.project.fields
-  // const bannerIMG = bannerImage.fields.file.url;
-  // console.log("The Data from contentful", bannerIMG)
-
-  // const selectID = (id) => {
-  //   console.log("WHAT IS HEADING BACK", id)
-  //   props.itemHandler(id);
-  // };
+  const {title, slug, thumbnailUrl, bannerUrl, repoUrl, siteUrl} = props.project.fields;
+ 
   return (
     <div className={projectStyles.card}>
-      {/* <div className='card-title'>
-        <h1>{title}</h1>
-      </div>
-      <div className={projectStyles.cardImage}>
-       <Image src={'https:' + bannerIMG} width="500px" height="400px"/>
-      </div>
-      <div className={projectStyles.cardBttm}>
-          <h3>{description}</h3>
-        <button onClick={(id) => selectID(id)}>See More</button>
-      </div> */}
+      <h1>{title}</h1>
+      <Image src={"https:" + thumbnailUrl.fields.file.url} width="200px" height="200px"/>     
     </div>
   );
 };
