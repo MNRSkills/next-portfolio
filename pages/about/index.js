@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import About from "../../components/About/about";
+import aboutStyles from "../../styles/About.module.css";
 
 //animate
 //initial
@@ -19,7 +20,7 @@ const dummyProfile = [
 
 const AboutMe = () => {
   return (
-    <motion.div>
+    <motion.div className={aboutStyles.aboutMeIndex}>
       <About data={dummyProfile}/>
     </motion.div>
   );
