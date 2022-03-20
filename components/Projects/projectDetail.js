@@ -4,7 +4,6 @@ import Image from "next/image";
 import projectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectDetail = (props) => {
-  console.log("LOOKING FOR PROPS", props.project.fields);
 
   const { title, slug, thumbnailUrl, bannerUrl, repoUrl, siteUrl } =
     props.project.fields;
@@ -17,6 +16,9 @@ const ProjectDetail = (props) => {
         width='200px'
         height='200px'
       />
+      <button><a href={'../../projects/'+ slug }>{slug}</a></button>
+      {/* {console.log("THE SLUG", slug)} */}
+      {/* <Link href={`/projects/${slug}`}></Link> */}
     </div>
   );
 };
