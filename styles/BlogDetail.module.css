@@ -1,3 +1,19 @@
 .container {
     grid-column: layout-left/layout-right;
 }
+
+.blogCard{
+    padding: 60px;
+}
+
+
+.blogCard h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: "Playfair Display", serif;
+}
+
+
+.blogCard p{
+    font-size: 1.7em;
+}

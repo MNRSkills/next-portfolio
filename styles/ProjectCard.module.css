@@ -1,14 +1,17 @@
 .postContainer {
-    height: 100%;
+    /* min-height: 100vh; */
     color: white;
     grid-column: layout-right/layout-left;
   }
 
 .projectContainer {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 
