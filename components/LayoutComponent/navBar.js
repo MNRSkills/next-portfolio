@@ -1,5 +1,12 @@
 import Link from "next/link";
 import styles from "../../styles/Nav.module.css";
+import {
+  faHome,
+  faWrench,
+  faCode,
+  faCodeCommit,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
   return (
@@ -13,11 +20,11 @@ const NavBar = () => {
         </Link>
       </div>
       <ul className={styles.unorderList}>
-        
         <li>
           <Link href='/about'>About</Link>
         </li>
         <li>
+          <FontAwesomeIcon icon={faWrench}/>
           <Link href='/projects'>Projects</Link>
         </li>
         <li>
@@ -26,13 +33,19 @@ const NavBar = () => {
       </ul>
       <ul className={styles.unorderListTwo}>
         <li>
-          <Link href='/facebook'>Meta</Link>
+          <Link href='/facebook'>
+            <FontAwesomeIcon icon={faWrench} />
+          </Link>
         </li>
         <li>
-          <Link href='/twitter'>Twitter</Link>
+          <Link href='/twitter'>
+            <FontAwesomeIcon icon={faCode} />
+          </Link>
         </li>
         <li>
-          <Link href='/github'>GitHub</Link>
+          <Link href='/github'>
+            <FontAwesomeIcon icon={faCodeCommit} />
+          </Link>
         </li>
       </ul>
     </nav>

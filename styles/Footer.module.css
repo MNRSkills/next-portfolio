@@ -24,3 +24,8 @@
     display: inline;
     padding: 2em;
 }
+
+.logo img{
+    width: 100px;
+    max-height: 180px;
+  }
