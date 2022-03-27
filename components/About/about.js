@@ -3,6 +3,7 @@ import aboutStyles from "../../styles/About.module.css";
 
 
 const About = (props) => {
+    // console.log(props)
 
     return(
         <div className={aboutStyles.aboutMePage}>

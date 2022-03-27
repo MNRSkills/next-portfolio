@@ -2,32 +2,41 @@
   grid-column: layout-left/layout-right;
 }
 
-
-
 .aboutMePage {
+  height: 100%;
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container h1{
+  font-size: 4em;
+}
+
+.name{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.aboutPicFrame {
+  width: 500px;
+  
+}
+
+
+/* .aboutMePage {
     height: 75vh;
-  /* padding: 20px; */
   display: grid;
   grid-template-columns: 10%[col-right] 1fr [col-left] 10%;
   grid-template-rows: [header-start] minmax(10px, auto) [header-end bio-start] 1fr [bio-end footer-start] minmax(10px, auto) [footer-end];
 }
-.container {
-  grid-column-start: col-right;
-  grid-column-end: col-left;
-  grid-row-start: header-start;
-  grid-row-end: footer-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  
-}
 
-.aboutPicFrame {
-  width: 500px;
-  grid-row: bio-start/bio-end;
-  grid-column: right-middle/middle-m;
-}
 
 .aboutPicFrame img {
   width: 100%;
@@ -54,4 +63,4 @@
   font-weight: 300;
   font-size: 1.7em;
   margin: 0;
-}
+} */

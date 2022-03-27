@@ -1,20 +1,26 @@
 import aboutStyles from "../../styles/About.module.css";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Image from "next/image";
 
 const ProfileItem = (props) => {
-  const { firstName, lastName, skill, fourLineBio, profileIMG } = props.profile;
+  console.log(props.profile.fields, "FROM PORTFOLIO PAGE");
+  const { firstName, lastName, backgroundImage, shortBio } =
+    props.profile.fields;
   return (
     <div className={aboutStyles.container}>
-        <div className={aboutStyles.aboutPicFrame}>
-            <img src={profileIMG} alt="Profile Picture"/>
-        </div>
+      <div className={aboutStyles.name}>
+      <h1>{firstName}</h1>
+      <h1>{lastName}</h1>
+      </div>
+      <div className={aboutStyles.aboutPicFrame}>
+        <Image
+          src={"https:" + backgroundImage.fields.file.url}
+          width={backgroundImage.fields.file.details.image.width}
+          height={backgroundImage.fields.file.details.image.height}
+        />
+      </div>
       <div className={aboutStyles.aboutMe}>
-        <div className="about-name">
-          <h1>{firstName}</h1>
-          <h1>{lastName}</h1>
-        </div>
-        <div className='about-footer'>
-          <p className='about-par'> {fourLineBio} </p>
-        </div>
+        {documentToReactComponents(shortBio)}
       </div>
     </div>
   );

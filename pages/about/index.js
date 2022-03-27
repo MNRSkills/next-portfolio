@@ -3,27 +3,37 @@ import { motion } from "framer-motion";
 import About from "../../components/About/about";
 import aboutStyles from "../../styles/About.module.css";
 
+import { createClient } from "contentful";
+
 //animate
 //initial
 //exit
 
-const dummyProfile = [
-  {
-    firstName: "Mack",
-    lastName: "Ramirez",
-    skill: "web development",
-    fourLineBio:
-      "Working hard every day to achieve my goal of becoming a web developer for a high end company, like yours. Highly motivated, team player, with skills in React Node and Next JS",
-      profileIMG: "https://res.cloudinary.com/mackr/image/upload/v1643684867/IT-Blog/uuea5uau2hgm7e2fb1ds.jpg",
-  },
-];
 
-const AboutMe = () => {
+const AboutMe = ({about_me}) => {
   return (
     <motion.div className={aboutStyles.aboutMeIndex}>
-      <About data={dummyProfile}/>
+      <About data={about_me}/>
     </motion.div>
   );
 };
+
+
+
+export async function getStaticProps() {
+
+  const client = createClient({
+    space:process.env.CONTENTFUL_SPACE_ID,
+    accessToken:process.env.CONTENTFUL_ACCESS_KEY
+  })
+
+  const res = await client.getEntries({ content_type:"author"})
+  console.log(res.items)
+  return{
+    props: {
+      about_me: res.items
+    }
+  }
+}
 
 export default AboutMe;
