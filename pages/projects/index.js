@@ -7,7 +7,6 @@ import ProjectStyles from "../../styles/ProjectCard.module.css";
 
 
 const Projects = (props) => {
-  console.log("THISIS FROM PAGE PROJECT", props.response)
   return (
     <motion.div className={ProjectStyles.postContainer}>
       <ProjectsCO data={props.response} />
@@ -18,7 +17,7 @@ const Projects = (props) => {
 
 
 
-
+//FETCHING FUNCTION
 export async function getStaticProps() {
 
   const client = createClient({

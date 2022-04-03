@@ -5,6 +5,7 @@ import {
   faWrench,
   faCode,
   faCodeCommit,
+  faGitHub
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -44,7 +45,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link href='/github'>
-            <FontAwesomeIcon icon={faCodeCommit} />
+            <FontAwesomeIcon icon={faGitHub} />
           </Link>
         </li>
       </ul>
