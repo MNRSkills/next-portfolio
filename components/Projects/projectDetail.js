@@ -4,22 +4,21 @@ import Image from "next/image";
 import projectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectDetail = (props) => {
-
   const { title, slug, thumbnailUrl, bannerUrl, repoUrl, siteUrl } =
     props.project.fields;
 
   return (
-    <div className={projectStyles.card}>
+    <motion.div className={projectStyles.card}>
       <h1>{title}</h1>
       <Image
         src={"https:" + thumbnailUrl.fields.file.url}
         width='200px'
         height='200px'
       />
-      <button><a href={'../../projects/'+ slug }>{slug}</a></button>
-      {/* {console.log("THE SLUG", slug)} */}
-      {/* <Link href={`/projects/${slug}`}></Link> */}
-    </div>
+      <Link href={"../../projects/" + slug}>
+        <div className={projectStyles.cardLink}>Read More</div>
+      </Link>
+    </motion.div>
   );
 };
 

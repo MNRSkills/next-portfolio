@@ -7,7 +7,6 @@ import blogStyles from "../../styles/BlogPost.module.css";
 import Blogs from "../../components/Blogs/blogs";
 
 const BlogFetch = (props) => {
-
   return (
     <motion.div className={blogStyles.postContainer}>
       <Blogs blogData={props.response} />

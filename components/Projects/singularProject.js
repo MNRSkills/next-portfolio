@@ -4,7 +4,6 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image";
 
 const SingularProject = (props) => {
-  console.log("FROM SINGULAR", props.project.fields);
   const { title, bannerImage, descriprtion, thumbnailUrl, repoUrl } =
     props.project.fields;
   const { details, fileName, url } = thumbnailUrl.fields.file;

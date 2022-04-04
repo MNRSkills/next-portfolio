@@ -5,7 +5,7 @@ import {
   faWrench,
   faCode,
   faCodeCommit,
-  faGitHub
+  faGitHub,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -25,8 +25,11 @@ const NavBar = () => {
           <Link href='/about'>About</Link>
         </li>
         <li>
-          <FontAwesomeIcon icon={faWrench}/>
-          <Link href='/projects'>Projects</Link>
+          <Link href='/projects'>
+            <div>
+              Projects <FontAwesomeIcon icon={faWrench} />
+            </div>
+          </Link>
         </li>
         <li>
           <Link href='/blog'>Blog</Link>
@@ -35,17 +38,23 @@ const NavBar = () => {
       <ul className={styles.unorderListTwo}>
         <li>
           <Link href='/facebook'>
-            <FontAwesomeIcon icon={faWrench} />
+            <div>
+              <FontAwesomeIcon icon={faWrench} />
+            </div>
           </Link>
         </li>
         <li>
           <Link href='/twitter'>
-            <FontAwesomeIcon icon={faCode} />
+            <div>
+              <FontAwesomeIcon icon={faCode} />
+            </div>
           </Link>
         </li>
         <li>
           <Link href='/github'>
-            <FontAwesomeIcon icon={faGitHub} />
+            <div>
+              <FontAwesomeIcon icon={faGitHub} />
+            </div>
           </Link>
         </li>
       </ul>

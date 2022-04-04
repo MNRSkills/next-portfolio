@@ -20,6 +20,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
 }
 
 .unorderListTwo{
@@ -35,7 +37,9 @@
     color: white;
 }
 
-.unorderList a {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 900;
+
+@media only screen and (max-width: 700px) {
+  .unorderList{
+    display: none;
+  }
 }
