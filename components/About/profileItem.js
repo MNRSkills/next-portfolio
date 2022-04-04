@@ -3,7 +3,6 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image";
 
 const ProfileItem = (props) => {
-  console.log(props.profile.fields, "FROM PORTFOLIO PAGE");
   const { firstName, lastName, backgroundImage, shortBio } =
     props.profile.fields;
   return (

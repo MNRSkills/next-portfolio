@@ -3,7 +3,6 @@ import slugStyles from "../../styles/BlogDetail.module.css";
 import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 const BlogDetail = (props) => {
-  console.log(props);
   const { title, subtitle, bannerImage, blogContent } = props.blogPost.fields;
   return (
     <div>
