@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import Link from "next/link";
 import styles from "../../styles/Nav.module.css";
 import {
@@ -5,11 +6,13 @@ import {
   faWrench,
   faCode,
   faCodeCommit,
-  faGitHub,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faFacebook} from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon, faGitHub } from "@fortawesome/react-fontawesome";
 
-const NavBar = () => {
+const NavBar = () => { 
+  const [ menu, setMenu ] = useState(false);
   return (
     <nav className={styles.container}>
       <div className={styles.logo}>
@@ -20,6 +23,11 @@ const NavBar = () => {
           />
         </Link>
       </div>
+      {/* //BURGER BARS */}
+      <div className="hamburger">
+        <FontAwesomeIcon icon={faBars}/>
+      </div>
+      {/* //START OF MENU */}
       <ul className={styles.unorderList}>
         <li>
           <Link href='/about'>About</Link>
@@ -37,16 +45,16 @@ const NavBar = () => {
       </ul>
       <ul className={styles.unorderListTwo}>
         <li>
-          <Link href='/facebook'>
+          <Link href='https://twitter.com/home'>
             <div>
               <FontAwesomeIcon icon={faWrench} />
             </div>
           </Link>
         </li>
         <li>
-          <Link href='/twitter'>
+          <Link href='/https://www.facebook.com/'>
             <div>
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon icon={faFacebook} />
             </div>
           </Link>
         </li>
