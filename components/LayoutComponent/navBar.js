@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Nav.module.css";
 import {
@@ -7,12 +7,13 @@ import {
   faCode,
   faCodeCommit,
   faBars,
+  faGitHub,
 } from "@fortawesome/free-solid-svg-icons";
-import {faFacebook} from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon, faGitHub } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const NavBar = () => { 
-  const [ menu, setMenu ] = useState(false);
+const NavBar = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <nav className={styles.container}>
       <div className={styles.logo}>
@@ -24,13 +25,17 @@ const NavBar = () => {
         </Link>
       </div>
       {/* //BURGER BARS */}
-      <div className="hamburger">
-        <FontAwesomeIcon icon={faBars}/>
+      <div className='hamburger'>
+        <FontAwesomeIcon icon={faBars} />
       </div>
       {/* //START OF MENU */}
       <ul className={styles.unorderList}>
         <li>
-          <Link href='/about'>About</Link>
+          <Link href='/about'>
+            <div>
+              About <FontAwesomeIcon icon={faWrench} />
+            </div>
+          </Link>
         </li>
         <li>
           <Link href='/projects'>
@@ -40,7 +45,11 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link href='/blog'>Blog</Link>
+          <Link href='/blog'>
+            <div>
+              Blog <FontAwesomeIcon icon={faWrench} />
+            </div>
+          </Link>
         </li>
       </ul>
       <ul className={styles.unorderListTwo}>
@@ -54,14 +63,14 @@ const NavBar = () => {
         <li>
           <Link href='/https://www.facebook.com/'>
             <div>
-              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faWrench} />
             </div>
           </Link>
         </li>
         <li>
           <Link href='/github'>
             <div>
-              <FontAwesomeIcon icon={faGitHub} />
+              <FontAwesomeIcon icon={faWrench} />
             </div>
           </Link>
         </li>

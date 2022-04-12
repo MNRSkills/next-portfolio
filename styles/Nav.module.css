@@ -1,7 +1,5 @@
 .container {
-
   background-color: #202124;
-  /* border-bottom: 4px solid gray; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +30,7 @@
 .unorderList li {
     margin: 20px;
     color: white;
+    cursor: pointer;
 }
 
 

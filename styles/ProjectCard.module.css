@@ -1,5 +1,5 @@
 .postContainer {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     color: white;
     grid-column: layout-right/layout-left;
   }

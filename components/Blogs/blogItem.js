@@ -4,17 +4,22 @@ import Link from "next/link";
 import blogStyles from "../../styles/BlogPost.module.css";
 
 const BlogItem = (props) => {
-// console.log(props.blog.fields.slug)
+  console.log(props.blog.fields);
   return (
-    <div className={blogStyles.card} >
+    <div className={blogStyles.card}>
       <div className={blogStyles.cardDescription}>
-      
+        <h1>{props.blog.fields.title}</h1>
+        <h2>{props.blog.fields.subtitle}</h2>
       </div>
       <div className={blogStyles.imageContainer}>
-        <Image src={"https:"+ props.blog.fields.bannerImage.fields.file.url} width="375px" height="268px"/>
-        </div>
+        <Image
+          src={"https:" + props.blog.fields.bannerImage.fields.file.url}
+          width='375px'
+          height='268px'
+        />
+      </div>
 
-        <Link href={"../../blog/" + props.blog.fields.slug}>Check it out</Link>
+      <Link href={"../../blog/" + props.blog.fields.slug} className={blogStyles.linkbtn}>Check it out</Link>
     </div>
   );
 };

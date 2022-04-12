@@ -5,8 +5,8 @@
 }
 
 .container {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   justify-content: space-around;
   align-items: center;
@@ -26,14 +26,30 @@
   /* padding: 10%; */
   color: white;
   position: absolute;
+  top:30%;
+  bottom: 70%;
+  text-align: center;
 }
 
-.cardDescription h1 {
+.cardDescription h1 h2 {
   font-weight: 900;
   font-size: 1.8em;
   text-align: center;
   text-transform: capitalize;
 }
 
+.card:hover img {
+  opacity: 0.3;
+}
+.cardDescription:hover h1 h2 {
+  opacity: 1;
+  width: 100%;
+}
+
 .imageContainer {
+  transition: .5s ease;
+}
+
+.linkbtn{
+  padding: 10px
 }
