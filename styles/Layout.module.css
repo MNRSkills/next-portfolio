@@ -12,7 +12,6 @@
 }
 
 .parentDiv{
-  /* height: 100vh; */
   display: grid;
   grid-template-columns: 10% [layout-right] 1fr [layout-left] 10%;
   padding: 10px 10px;

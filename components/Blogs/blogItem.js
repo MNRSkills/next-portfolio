@@ -19,7 +19,7 @@ const BlogItem = (props) => {
         />
       </div>
 
-      <Link href={"../../blog/" + props.blog.fields.slug} className={blogStyles.linkbtn}>Check it out</Link>
+      <Link href={"../../blog/" + props.blog.fields.slug} className={blogStyles.linkbtn}><h6>Check it out</h6></Link>
     </div>
   );
 };
