@@ -51,25 +51,35 @@ const NavBar = () => {
         </li>
       </ul>
       <ul className={styles.unorderListTwo}>
+        {/* <Link href={url}>
+  <a target="_blank">Click this link</a>
+</Link> */}
         <li>
-          <a
-            href='https://twitter.com/home'
-            target='_blank'
-            className={styles.socialIcons}>
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
+          <Link href='https://twitter.com/home'>
+            <div>
+              <a target='_blank' className={styles.socialIcons}>
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </div>
+          </Link>
         </li>
         <li>
-          <a
-            href='https://facebook.com'
-            target='_blank'
-            className={styles.socialIcons}>
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
+          <Link href='https://facebook.com'>
+            <div>
+              <a target='_blank' className={styles.socialIcons}>
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+            </div>
+          </Link>
         </li>
         <li>
-         <a href="https://github.com/mnrskills"></a>
-         <FontAwesomeIcon icon={faGithubAlt}/>
+          <Link href='https://github.com/mnrskills'>
+            <div>
+              <a target='_blank'>
+                <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
+            </div>
+          </Link>
         </li>
       </ul>
     </nav>
