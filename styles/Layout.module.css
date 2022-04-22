@@ -6,13 +6,11 @@
     rgba(42, 38, 38, 1) 100%
   );
   font-family: Ubuntu, sans-serif;
-  display: grid;
-  grid-template-rows: [nav-start] 6rem [nav-end content-start] 1fr [content-end footer-start] 200px [footer-end];
 
 }
 
 .parentDiv{
-  display: grid;
-  grid-template-columns: 10% [layout-right] 1fr [layout-left] 10%;
+  /* display: grid;
+  grid-template-columns: 10% [layout-right] 1fr [layout-left] 10%; */
   padding: 10px 10px;
 }

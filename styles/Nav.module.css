@@ -25,6 +25,11 @@
 
 .unorderListTwo{
   display: inline;
+  list-style: none;
+}
+
+.unorderListTwo socialIcon i{
+  font-size:1.7em;
 }
 
 .unorderList li {
@@ -33,9 +38,21 @@
     cursor: pointer;
 }
 
+.hamburger {
+  display:none;
+}
+
 
 @media only screen and (max-width: 700px) {
   .unorderList{
     display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 372px){
+  .hamburger {
+    display: unset;
   }
 }

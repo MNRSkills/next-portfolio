@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Nav.module.css";
+import { faHome, faWrench, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
-  faHome,
-  faWrench,
-  faCode,
-  faCodeCommit,
-  faBars,
-  faGitHub,
-} from "@fortawesome/free-solid-svg-icons";
-import { faFacebook } from "@fortawesome/fontawesome-svg-core";
+  faGithubAlt,
+  faGoogle,
+  faFacebook,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
@@ -25,7 +23,7 @@ const NavBar = () => {
         </Link>
       </div>
       {/* //BURGER BARS */}
-      <div className='hamburger'>
+      <div className={styles.hamburger}>
         <FontAwesomeIcon icon={faBars} />
       </div>
       {/* //START OF MENU */}
@@ -54,25 +52,24 @@ const NavBar = () => {
       </ul>
       <ul className={styles.unorderListTwo}>
         <li>
-          <Link href='https://twitter.com/home'>
-            <div>
-              <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
+          <a
+            href='https://twitter.com/home'
+            target='_blank'
+            className={styles.socialIcons}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </li>
         <li>
-          <Link href='/https://www.facebook.com/'>
-            <div>
-              <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
+          <a
+            href='https://facebook.com'
+            target='_blank'
+            className={styles.socialIcons}>
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
         </li>
         <li>
-          <Link href='/github'>
-            <div>
-              <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
+         <a href="https://github.com/mnrskills"></a>
+         <FontAwesomeIcon icon={faGithubAlt}/>
         </li>
       </ul>
     </nav>
