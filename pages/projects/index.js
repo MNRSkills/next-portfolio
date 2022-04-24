@@ -2,15 +2,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { createClient } from "contentful";
 import ProjectsCO from "../../components/Projects/projects";
-import ProjectStyles from "../../styles/ProjectCard.module.css";
+
 
 
 
 const Projects = (props) => {
   return (
-    <motion.div className={ProjectStyles.postContainer}>
+    <motion.div className="container">
       <ProjectsCO data={props.response} />
-      <Link href="/projectFormPage">New Project Form</Link>
     </motion.div>
   );
 };

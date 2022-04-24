@@ -39,13 +39,13 @@
 }
 
 .hamburger {
-  display:none;
+  visibility: hidden;
 }
 
 
 @media only screen and (max-width: 700px) {
   .unorderList{
-    display: none;
+    /* display: none; */
   }
 }
 

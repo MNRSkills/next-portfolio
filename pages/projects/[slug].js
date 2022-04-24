@@ -1,5 +1,4 @@
 import React from "react";
-import slugStyle from "../../styles/ProjectSlug.module.css";
 import SingularProject from "../../components/Projects/singularProject";
 import { createClient } from "contentful";
 
@@ -27,7 +26,7 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }) {
-  console.log("DURING BUILD", params.slug)
+  // console.log("DURING BUILD", params.slug)
  
   const { items } = await client.getEntries({
     content_type: "projects",
@@ -40,7 +39,7 @@ export async function getStaticProps({ params }) {
 
 const SingleProject = (props) => {
   console.log("SINGLE PAGE RENDERED", props.project.fields.title);
-  return <div className={slugStyle.container}><SingularProject project={props.project}/></div>;
+  return <div className="container"><SingularProject project={props.project}/></div>;
 };
 
 export default SingleProject;

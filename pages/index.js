@@ -3,10 +3,10 @@ import HomeStyles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <motion.div className={HomeStyles.container}>
-      <main className={HomeStyles.home}>
+    <motion.div className="homePage h-screen">
+      <main className="homepage-main container text-white text-3xl">
         <h1>Mack Ramirez Ready To Work For You</h1>
-        <motion.div className={HomeStyles.underline} animation={{x: 100}}></motion.div>
+        <motion.div className="animated home-div" animation={{x: 100}}></motion.div>
       </main>
     </motion.div>
   );

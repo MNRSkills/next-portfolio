@@ -12,5 +12,9 @@
 .parentDiv{
   /* display: grid;
   grid-template-columns: 10% [layout-right] 1fr [layout-left] 10%; */
-  padding: 10px 10px;
+  /* background-image: url("https://res.cloudinary.com/mackr/image/upload/v1650817993/fyqwlmj88pqip9qayqzs.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+
 }

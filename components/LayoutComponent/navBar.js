@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import styles from "../../styles/Nav.module.css";
+// import styles from "../../styles/Nav.module.css";
 import { faHome, faWrench, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithubAlt,
@@ -13,8 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
   return (
-    <nav className={styles.container}>
-      <div className={styles.logo}>
+    <nav className='bg-black text-white text-3xl'>
+      <div className='w-20'>
         <Link href='/'>
           <img
             src='https://res.cloudinary.com/mackr/image/upload/v1645067949/zgflirliskdxdcldnade.png'
@@ -23,11 +23,11 @@ const NavBar = () => {
         </Link>
       </div>
       {/* //BURGER BARS */}
-      <div className={styles.hamburger}>
+      <div className='w-10'>
         <FontAwesomeIcon icon={faBars} />
       </div>
       {/* //START OF MENU */}
-      <ul className={styles.unorderList}>
+      <ul className='flex justify-around items-center'>
         <li>
           <Link href='/about'>
             <div>
@@ -50,14 +50,14 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
-      <ul className={styles.unorderListTwo}>
+      <ul className='flex flex-col'>
         {/* <Link href={url}>
   <a target="_blank">Click this link</a>
 </Link> */}
         <li>
           <Link href='https://twitter.com/home'>
             <div>
-              <a target='_blank' className={styles.socialIcons}>
+              <a target='_blank' className='py-6'>
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </div>
@@ -66,7 +66,7 @@ const NavBar = () => {
         <li>
           <Link href='https://facebook.com'>
             <div>
-              <a target='_blank' className={styles.socialIcons}>
+              <a target='_blank' className='py-6'>
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>

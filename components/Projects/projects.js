@@ -1,15 +1,13 @@
 import ProjectDetail from "./projectDetail";
-import ProjectStyles from "../../styles/ProjectCard.module.css";
 
 const ProjectsCO = (props) => {
 
 
   //THE CLICKHANDLER FOR INDIVIDUAL ITEM GOES HERE
   const itemHandler = (id) => {
-    console.log("THIS HANDLER IS CLICKED", id);
   };
   return (
-    <div className={ProjectStyles.projectContainer}>
+    <div className="project-map grid grid-cols-3 gap-6 py-10">
       {props.data.map((project, index) => {
         return (
           <ProjectDetail

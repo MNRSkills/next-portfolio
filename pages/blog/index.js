@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { createClient } from "contentful";
 import Link from "next/link";
-import blogStyles from "../../styles/BlogPost.module.css";
+import blogStyles from "../../styles/ProjectCard.module.css";
 
 import Blogs from "../../components/Blogs/blogs";
 
@@ -10,10 +10,6 @@ const BlogFetch = (props) => {
   return (
     <motion.div className={blogStyles.postContainer}>
       <Blogs blogData={props.response} />
-      <span>
-        {/* make this an icon later in the nav */}
-        <Link href='/newBlogForm'>New Blog</Link>
-      </span>
     </motion.div>
   );
 };

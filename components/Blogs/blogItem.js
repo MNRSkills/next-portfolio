@@ -1,7 +1,7 @@
 import { filterProps } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import blogStyles from "../../styles/BlogPost.module.css";
+import blogStyles from "../../styles/ProjectCard.module.css";
 
 const BlogItem = (props) => {
   console.log(props.blog.fields);
@@ -19,7 +19,11 @@ const BlogItem = (props) => {
         />
       </div>
 
-      <Link href={"../../blog/" + props.blog.fields.slug} className={blogStyles.linkbtn}><h6>Check it out</h6></Link>
+      <Link
+        href={"../../blog/" + props.blog.fields.slug}
+        className={blogStyles.linkbtn}>
+        <h6>Check it out</h6>
+      </Link>
     </div>
   );
 };
