@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 const BlogItem = (props) => {
-  console.log(props.blog.fields);
+  // console.log(props.blog.fields);
   return (
     <div className="bg-gray-400 rounded m-auto">
       <div className="text-gray-300 text-2xl text-center">
