@@ -2,13 +2,12 @@
 import { motion } from "framer-motion";
 import { createClient } from "contentful";
 import Link from "next/link";
-import blogStyles from "../../styles/ProjectCard.module.css";
 
 import Blogs from "../../components/Blogs/blogs";
 
 const BlogFetch = (props) => {
   return (
-    <motion.div className={blogStyles.postContainer}>
+    <motion.div className="container">
       <Blogs blogData={props.response} />
     </motion.div>
   );

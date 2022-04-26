@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import About from "../../components/About/about";
-import aboutStyles from "../../styles/About.module.css";
+
 
 import { createClient } from "contentful";
 
@@ -12,7 +12,7 @@ import { createClient } from "contentful";
 
 const AboutMe = ({about_me}) => {
   return (
-    <motion.div className={aboutStyles.aboutMeIndex}>
+    <motion.div className="h-screen p-20">
       <About data={about_me}/>
     </motion.div>
   );

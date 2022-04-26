@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import HomeStyles from "../styles/Home.module.css";
+
 
 export default function Home() {
   return (

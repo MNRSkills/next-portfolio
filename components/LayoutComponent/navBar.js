@@ -11,10 +11,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
-  const [menu, setMenu] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
-    <nav className='bg-black text-white text-3xl'>
-      <div className='w-20'>
+    <nav className='bg-stone-900 text-white text-3xl flex justify-around relative md:static'>
+      <div className='w-52 m-auto'>
         <Link href='/'>
           <img
             src='https://res.cloudinary.com/mackr/image/upload/v1645067949/zgflirliskdxdcldnade.png'
@@ -23,65 +23,69 @@ const NavBar = () => {
         </Link>
       </div>
       {/* //BURGER BARS */}
-      <div className='w-10'>
-        <FontAwesomeIcon icon={faBars} />
+      <div className='w-10 m-auto md:invisible'>
+        <FontAwesomeIcon icon={faBars} onClick={(e) => setOpen(!open)} />
       </div>
-      {/* //START OF MENU */}
-      <ul className='flex justify-around items-center'>
-        <li>
-          <Link href='/about'>
-            <div>
-              About <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href='/projects'>
-            <div>
-              Projects <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href='/blog'>
-            <div>
-              Blog <FontAwesomeIcon icon={faWrench} />
-            </div>
-          </Link>
-        </li>
-      </ul>
-      <ul className='flex flex-col'>
-        {/* <Link href={url}>
-  <a target="_blank">Click this link</a>
-</Link> */}
-        <li>
-          <Link href='https://twitter.com/home'>
-            <div>
-              <a target='_blank' className='py-6'>
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href='https://facebook.com'>
-            <div>
-              <a target='_blank' className='py-6'>
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href='https://github.com/mnrskills'>
-            <div>
-              <a target='_blank'>
-                <FontAwesomeIcon icon={faGithubAlt} />
-              </a>
-            </div>
-          </Link>
-        </li>
-      </ul>
+      {/* BUILD A CONDITIONAL TURNARY OPERATOR 
+       THIS WILL CHECK STATE AND IF TRUE THE X ICON WILL SHOW IF FALSE BARS WILL SHOW */}
+
+      <div
+        className={`absolute w-full top-52 bg-gray-700 py-10 ${
+          open ? "left-0" : "left-[-100%] bg-gray-700 "
+        } md:static md:bg-transparent md:flex `}>
+        <ul className='flex flex-col justify-around items-center md:visible md:flex-row md:m-auto'>
+          <li className='p-4'>
+            <Link href='/about'>
+              <div>
+                About <FontAwesomeIcon icon={faWrench} />
+              </div>
+            </Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/projects'>
+              <div>
+                Projects <FontAwesomeIcon icon={faWrench} />
+              </div>
+            </Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/blog'>
+              <div>
+                Blog <FontAwesomeIcon icon={faWrench} />
+              </div>
+            </Link>
+          </li>
+        </ul>
+        <ul className='flex justify-between px-8 md:flex-col md:p-0 md:mx-20 md:my-auto'>
+          <li>
+            <Link href='https://twitter.com/home'>
+              <div>
+                <a target='_blank' className='py-6'>
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href='https://facebook.com'>
+              <div>
+                <a target='_blank' className='py-6'>
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href='https://github.com/mnrskills'>
+              <div>
+                <a target='_blank'>
+                  <FontAwesomeIcon icon={faGithubAlt} />
+                </a>
+              </div>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

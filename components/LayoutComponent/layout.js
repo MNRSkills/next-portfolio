@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import NavBar from "./navBar";
 import Footer from "./footer";
-import LayoutStyles from "../../styles/Layout.module.css";
+
 
 const Layout = (props) => {
   return (
-    <div className={LayoutStyles.container}>
+    <div className="w-full h-full m-0 p-0">
       <NavBar />
       <motion.div
-        className={LayoutStyles.parentDiv}
+        className="w-full bg-stone-900"
         exit={{ opacity: 0 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
