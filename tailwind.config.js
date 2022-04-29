@@ -13,7 +13,12 @@ module.exports = {
         "2xl": "1124px",
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        homePage:
+          "url('https://res.cloudinary.com/mackr/image/upload/v1651111625/fyqwlmj88pqip9qayqzs.png')",
+      },
+    },
   },
   plugins: [],
 };

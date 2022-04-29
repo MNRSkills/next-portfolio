@@ -16,6 +16,7 @@ const Layout = (props) => {
         {props.children}
       </motion.div>
       <Footer />
+      
     </div>
   );
 };
