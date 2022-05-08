@@ -11,7 +11,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className='bg-stone-900 h-full'>
-      <div className='p-10 m-auto md:w-1/4 w-1/2'>
+      <div className='m-auto md:w-20 w-1/2 lg:w-60'>
         <h1>
           <Link href='/'>
             <img

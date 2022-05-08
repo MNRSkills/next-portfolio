@@ -36,6 +36,10 @@ export async function getStaticProps({ params }) {
 }
 
 const SingleBlog = (props) => {
-  return <div className={slugStyles.container}><BlogDetail blogPost={props.blogPost}/></div>;
+  return (
+    <div className='bg-gray-500 container'>
+      <BlogDetail blogPost={props.blogPost} />
+    </div>
+  );
 };
 export default SingleBlog;

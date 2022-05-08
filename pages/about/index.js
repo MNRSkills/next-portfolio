@@ -29,7 +29,6 @@ export async function getStaticProps() {
 
 
   const res = await client.getEntries({ content_type:"author"})
-  console.log(res.items)
   return{
     props: {
       about_me: res.items
