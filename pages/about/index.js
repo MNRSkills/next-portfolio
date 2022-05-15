@@ -1,7 +1,5 @@
-
 import { motion } from "framer-motion";
 import About from "../../components/About/about";
-
 
 import { createClient } from "contentful";
 
@@ -9,31 +7,27 @@ import { createClient } from "contentful";
 //initial
 //exit
 
-
-const AboutMe = ({about_me}) => {
+const AboutMe = ({ about_me }) => {
   return (
-    <motion.div className="h-screen p-20">
-      <About data={about_me}/>
+    <motion.div className='p-20'>
+      <About data={about_me} />
     </motion.div>
   );
 };
 
-
 //FETCHING FROM CONTENTFUL
 export async function getStaticProps() {
-
   const client = createClient({
-    space:process.env.CONTENTFUL_SPACE_ID,
-    accessToken:process.env.CONTENTFUL_ACCESS_KEY
-  })
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
 
-
-  const res = await client.getEntries({ content_type:"author"})
-  return{
+  const res = await client.getEntries({ content_type: "author" });
+  return {
     props: {
-      about_me: res.items
-    }
-  }
+      about_me: res.items,
+    },
+  };
 }
 
 export default AboutMe;

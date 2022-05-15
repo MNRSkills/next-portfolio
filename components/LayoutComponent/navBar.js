@@ -34,23 +34,29 @@ const NavBar = () => {
           open ? "left-0" : "left-[-100%] bg-gray-700 "
         } md:static md:bg-transparent md:flex `}>
         <ul className='flex flex-col justify-around items-center md:visible md:flex-row md:m-auto'>
-          <li className='p-4 hover:bg-slate-400 rounded-xl'>
+          <li
+            className='p-4 hover:bg-slate-400 rounded-xl'
+            onClick={(e) => setOpen(false)}>
             <Link href='/about'>
               <div className='hover:text-gray-800 hover:first-letter:text-gray-700'>
                 About <FontAwesomeIcon icon={faWrench} />
               </div>
             </Link>
           </li>
-          <li className='p-4 hover:bg-slate-400 rounded-xl'>
+          <li
+            className='p-4 hover:bg-slate-400 rounded-xl'
+            onClick={(e) => setOpen(false)}>
             <Link href='/projects'>
               <div className='hover:text-gray-800 hover:first-letter:text-gray-700'>
                 Projects <FontAwesomeIcon icon={faWrench} />
               </div>
             </Link>
           </li>
-          <li className='p-4 hover:bg-slate-400 rounded-xl'>
+          <li
+            className='p-4 hover:bg-slate-400 rounded-xl'
+            onClick={(e) => setOpen(false)}>
             <Link href='/blog'>
-              <div className="hover:text-gray-800 hover:first-letter:text-gray-700">
+              <div className='hover:text-gray-800 hover:first-letter:text-gray-700'>
                 Blog <FontAwesomeIcon icon={faWrench} />
               </div>
             </Link>

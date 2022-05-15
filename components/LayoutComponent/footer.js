@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className='bg-stone-900 h-full'>
+    <div className='bg-stone-900 '>
       <div className='m-auto md:w-20 w-1/2 lg:w-60'>
         <h1>
           <Link href='/'>
@@ -21,7 +21,7 @@ const Footer = () => {
           </Link>
         </h1>
       </div>
-      <div className="container p-20">
+      <div className='container p-20'>
         <ul className='flex flex-col justify-between items-center md:flex-row'>
           <li className='text-gray-300 p-10'>
             <Link href='/about'>
@@ -46,7 +46,7 @@ const Footer = () => {
           </li>
         </ul>
         <ul className='flex justify-between items-center text-gray-300'>
-        <li>
+          <li>
             <Link href='https://twitter.com/home'>
               <div>
                 <a target='_blank' className='py-6 text-2xl'>
@@ -67,7 +67,7 @@ const Footer = () => {
           <li>
             <Link href='https://github.com/mnrskills'>
               <div>
-                <a target='_blank' className="py-6 text-2xl">
+                <a target='_blank' className='py-6 text-2xl'>
                   <FontAwesomeIcon icon={faGithubAlt} />
                 </a>
               </div>
