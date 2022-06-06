@@ -18,6 +18,11 @@ module.exports = {
         homePage:
           "url('https://res.cloudinary.com/mackr/image/upload/v1651111625/fyqwlmj88pqip9qayqzs.png')",
       },
+      colors: {
+        react: "#61DAFB",
+        node: "#73AA63",
+        markDown: "#46A2E3",
+      },
     },
   },
   plugins: [],

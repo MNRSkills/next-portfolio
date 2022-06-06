@@ -1,4 +1,11 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import {
+  faReact,
+  faNode,
+  faMarkdown,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -33,6 +40,49 @@ const ProfileItem = (props) => {
           height={backgroundImage.fields.file.details.image.height}
         />
       </motion.div>
+      <div className='py-20 m-auto text-center'>
+        <h1 className='font-sans font-light text-4xl text-gray-300 underline py-6'>
+          Skills
+        </h1>
+        <motion.ul className='text-gray-300 flex flex-col md:flex-row md:justify-center md:items-center'>
+          <motion.li
+            initial={{ x: -700, opacity: 0 }}
+            animate={{ x: 2, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}>
+            <FontAwesomeIcon
+              icon={faNode}
+              className='font-bold text-8xl md:px-6 py-10 m-auto text-node'
+            />
+          </motion.li>
+          <motion.li
+            initial={{ x: -700, opacity: 0 }}
+            animate={{ x: 2, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}>
+            <FontAwesomeIcon
+              icon={faReact}
+              className='font-bold text-8xl md:px-6 py-10 m-auto text-react'
+            />
+          </motion.li>
+          <motion.li
+            initial={{ x: -700, opacity: 0 }}
+            animate={{ x: 2, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}>
+            <FontAwesomeIcon
+              icon={faMarkdown}
+              className='font-bold text-8xl md:px-6 py-10 m-auto text-white'
+            />
+          </motion.li>
+          <motion.li
+            initial={{ x: -700, opacity: 0 }}
+            animate={{ x: 2, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2 }}>
+            <FontAwesomeIcon
+              icon={faPython}
+              className='font-bold text-8xl md:px-6 py-10 m-auto text-yellow-300'
+            />
+          </motion.li>
+        </motion.ul>
+      </div>
       <motion.div
         initial={{ y: 500, opacity: 0 }}
         animate={{ y: 20, opacity: 1 }}
