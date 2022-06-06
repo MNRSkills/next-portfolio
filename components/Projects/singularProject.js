@@ -10,7 +10,7 @@ const SingularProject = (props) => {
 
   return (
     <div className='container'>
-      <h1 className='text-center text-white text-2xl py-10'>{title}</h1>
+      <h1 className='text-center text-white text-8xl py-10'>{title}</h1>
       <Image
         src={"https:" + bannerImage.fields.file.url}
         width={bannerImage.fields.file.details.image.width}

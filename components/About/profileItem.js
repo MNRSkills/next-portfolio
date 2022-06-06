@@ -57,7 +57,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 3 }}>
+            transition={{ delay: 2, ease: "easeIn", duration: 4 }}>
             <FontAwesomeIcon
               icon={faReact}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-react'
@@ -66,7 +66,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 4 }}>
+            transition={{ delay: 4, ease: "easeIn", duration: 4 }}>
             <FontAwesomeIcon
               icon={faMarkdown}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-white'
@@ -75,7 +75,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 5 }}>
+            transition={{ delay: 5, ease: "easeIn", duration: 7 }}>
             <FontAwesomeIcon
               icon={faPython}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-yellow-300'
