@@ -65,29 +65,23 @@ const NavBar = () => {
         <ul className='flex justify-between px-8 md:flex-col md:p-0 md:mx-20 md:my-auto'>
           <li>
             <Link href='https://twitter.com/home'>
-              <div>
-                <a target='_blank' className='py-6'>
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </div>
+              <a target='_blank' className='py-6'>
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </Link>
           </li>
           <li>
             <Link href='https://facebook.com'>
-              <div>
-                <a target='_blank' className='py-6'>
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </div>
+              <a target='_blank' className='py-6'>
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
             </Link>
           </li>
           <li>
             <Link href='https://github.com/mnrskills'>
-              <div>
-                <a target='_blank'>
-                  <FontAwesomeIcon icon={faGithubAlt} />
-                </a>
-              </div>
+              <a target='_blank'>
+                <FontAwesomeIcon icon={faGithubAlt} />
+              </a>
             </Link>
           </li>
         </ul>

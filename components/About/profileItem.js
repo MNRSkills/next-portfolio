@@ -57,7 +57,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2 }}>
+            transition={{ ease: "easeOut", duration: 3 }}>
             <FontAwesomeIcon
               icon={faReact}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-react'
@@ -66,7 +66,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2 }}>
+            transition={{ ease: "easeOut", duration: 4 }}>
             <FontAwesomeIcon
               icon={faMarkdown}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-white'
@@ -75,7 +75,7 @@ const ProfileItem = (props) => {
           <motion.li
             initial={{ x: -700, opacity: 0 }}
             animate={{ x: 2, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2 }}>
+            transition={{ ease: "easeOut", duration: 5 }}>
             <FontAwesomeIcon
               icon={faPython}
               className='font-bold text-8xl md:px-6 py-10 m-auto text-yellow-300'
@@ -85,7 +85,7 @@ const ProfileItem = (props) => {
       </div>
       <motion.div
         initial={{ y: 500, opacity: 0 }}
-        animate={{ y: 20, opacity: 1 }}
+        animate={{ y: 2, opacity: 1 }}
         transition={{ ease: "easeIn", delay: 1.5, duration: 1.5 }}
         className='text-lg text-gray-300 m-auto overflow-hidden md:w-1/2'>
         {documentToReactComponents(shortBio)}
